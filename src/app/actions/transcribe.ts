@@ -2,7 +2,7 @@
 
 import { GoogleGenAI } from '@google/genai';
 import { PrismaClient } from '@prisma/client';
-import { auth } from '../../lib/auth';
+import { auth } from "../../../lib/auth";
 import { headers } from 'next/headers';
 
 const prisma = new PrismaClient();
