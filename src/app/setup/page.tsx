@@ -21,7 +21,7 @@ export default function SetupPage() {
     });
 
     if (error) {
-        setStatus("Error: " + error.message);
+        setStatus("Error: " + JSON.stringify(error));
     } else {
         setStatus("Success! Admin created. Redirecting to login...");
         setTimeout(() => router.push("/login"), 2000);
