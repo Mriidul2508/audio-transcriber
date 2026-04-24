@@ -23,7 +23,7 @@ export async function uploadAndTranscribe(formData: FormData) {
   const base64 = Buffer.from(buffer).toString("base64");
 
   const response = await ai.models.generateContent({
-    model: "gemini-1.5-flash",
+    model: "gemini-2.5-flash",
     contents: [{
       role: "user",
       parts: [
