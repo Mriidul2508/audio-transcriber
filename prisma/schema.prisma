@@ -28,6 +28,8 @@ model Session {
   token     String
   createdAt DateTime
   updatedAt DateTime
+  ipAddress String?  // <-- Add this line
+  userAgent String?  // <-- Add this line
   userId    String
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
